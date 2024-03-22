@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Formatação de Texto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Formatação de texto</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>
+      Nesta linha quero usar um <b>termo em negrito</b> (não semântico).
+      <br />(tag <code>&lt;b&gt;</code>)&#x2717;
+    </p>
+    <p>
+      Nesta linha quero usar um <strong>termo em destaque</strong> (semântico).
+      <br />(tag <code>&lt;strong&gt;</code>)&#x2713;
+    </p>
+    <p>
+      A tag <code>&lt;b&gt;</code> só o deixa em negrito, coisa que a tag
+      <code>&lt;strong&gt;</code> também faz, mas dá significado, indica
+      <strong>destaque</strong>.
+    </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>
+      Nesta linha, quero usar um <i>termo em itálico</i> (não semântico).
+      <br />(tag <code>&lt;i&gt;</code>)&#x2717;
+    </p>
+    <p>
+      Nesta linha, quero usar um <em>termo em ênfase</em> (semântico).
+      <br />(tag <code>&lt;em&gt;</code>)&#x2713;
+    </p>
+    <p>
+      Assim como a tag <code>&lt;b&gt;</code>, a tag <code>&lt;i&gt;</code> só o
+      deixa em itálico, já a tag <code>&lt;em&gt;</code> também, mas dá
+      significado, indica <em>ênfase</em>.
+    </p>
+    <p>
+      O que torna o código semântico ou não, é o significado que é atribuido. De
+      nada adianta dizer que é negrito por ser negrito, mais sentido é dado com
+      a tag que faz o mesmo e ainda indica no seu código o destaque no texto.
+    </p>
+    <h2>Marcado</h2>
+    <p>
+      Nesta linha, quero <mark>marcar um trecho</mark>. <br />(tag
+      <code>&lt;mark&gt;</code>)
+    </p>
+    <p>Também é possível modificar a cor do trecho grifado com CSS.</p>
+    <h2>Pequeno e Grande</h2>
+    <p>
+      Aqui, quero uma palavra <big>grande</big> e outra <small>pequena</small>.
+      <br />(a tag <code>&lt;big&gt;</code> entrou em desuso, pois é considerado
+      não semântica, já a tag <code>&lt;small&gt;</code>, não.)
+    </p>
+    <h2>Deletado</h2>
+    <p>
+      Quero utilizar um trecho legivel mas não considerado,<del>
+        como esse aqui.</del
+      >. <br />
+      (tag <code>&lt;del&gt;</code>)
+    </p>
+    <h2>Inserido</h2>
+    <p>
+      Agora, uso um trecho que parece ter sido inserido,
+      <ins>como esse aqui também.</ins> <br />(tag <code>&lt;ins&gt;</code>)
+    </p>
+    <p>
+      Outro método é usando a <u>tag <code>&lt;u&gt;</code></u
+      >, mas não é considerada semântica.
+    </p>
+    <h2>Sobrescrito</h2>
+    <p>
+      Para termos matemáticos, como potenciação, x<sup>20</sup>+1. <br />(tag
+      <code>&lt;sup&gt;</code>)
+    </p>
+    <h2>Subscrito</h2>
+    <p>
+      Já para termos químicos, como H<sub>2</sub>O. <br />(tag
+      <code>&lt;sub&gt;</code>)
+    </p>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>
+      Para que códigos se mantenham com a fonte monoespaçada, isso é, espaço
+      iguais entre as letras, utilize a tag <code>&lt;code&gt;</code>.
+    </p>
+    <p>Exemplo (com): <code>document.getElementById('teste')</code></p>
+    <p>Exemplo (sem): document.getElementById('teste')</p>
+    <p>
+      Agora para códigos manterem o espaçamento e a quebra de linhas, utilize
+      <code>&lt;pre&gt;</code>. Ex.:
+    </p>
+    <pre>
+        <code>
+    num =int(input('Digite um número'))
+    if num % 2 == 0;
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>
+      Isaac Newton (supostamente) disse a seguinte frase:
+      <q>O que sabemos é uma gota; o que ignoramos é um oceano.</q><br />(tag
+      <code>&lt;q&gt;</code>)
+    </p>
+    <h2>Citações Completas</h2>
+    <p>Maurício Samy Silva disse em seu livro:</p>
+    <blockquote
+      cite="https://www.google.com.br/books/edition/HTML5_2ª_Edição/f7JVBQAAQBAJ?hl=pt-BR&gbpv=1"
+    >
+      Um usuário ao preencher um formulário poderá digitar em seus controles não
+      apenas textos simples, mas também marcação HTML e até mesmo scripts
+      inteiros.
+    </blockquote>
+    <p>
+      (tag <code>&lt;blockquote&gt;</code> da um certo espaço da tela, mas serve
+      para que o código indique de onde surgiu o trecho demarcado)
+    </p>
+    <h2>Abreviações</h2>
+    <p>
+      Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e
+      <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+      <br />(tag <code>&lt;abbr&gt;</code>)
+    </p>
+    <h2>Texto invertido</h2>
+    <p>
+      <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo><br />(tag
+      <code>&lt;bdo&gt;</code>)
+    </p>
+    <p><a href="../index.html" target="_self" rel="prev">Voltar</a></p>
+  </body>
+</html>
